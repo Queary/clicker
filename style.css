@@ -1,5 +1,10 @@
-*{padding:0px;margin:0px}
+/* *{padding:0px;margin:0px} */
 
 body{
-  background: #080808
+  /*background: #080808*/
+}
+
+.pop {
+  height: 50px;
+  width: 80px;
 }

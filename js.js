@@ -37,14 +37,10 @@ function bigRealBitoc() {
   document.getElementById('bafMin').style.display = "block";
   document.getElementById('bafMone').style.display = "block";
 
-  let ftime = setInterval(function(){
-    ileg+=1
-    alert(ileg)
-  }, 1);
+  let ftime = setInterval(ready,1);
 };
 
 function ready () {
-  alert()
   money += 1;
   document.getElementById("monet").innerHTML = "monet: " + money;
 };

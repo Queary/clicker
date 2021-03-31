@@ -31,16 +31,20 @@ function bigBitoc() {
     alert("лох, где бабки????");
   };
 };
-
+var ileg = 0;
 function bigRealBitoc() {
   document.getElementById('openBaf').style.display = "none";
   document.getElementById('bafMin').style.display = "block";
   document.getElementById('bafMone').style.display = "block";
 
-  let ftime = setInterval(ready(), 100);
+  let ftime = setInterval(function(){
+    ileg+=1
+    alert(ileg)
+  }, 1);
 };
 
 function ready () {
+  alert()
   money += 1;
   document.getElementById("monet").innerHTML = "monet: " + money;
 };

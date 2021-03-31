@@ -10,7 +10,7 @@ function bitoc (){
   document.getElementById("up").innerHTML = money;
   i++;
   if (i == i2) {
-  document.getElementById("tex").innerHTML = texts[0 - 0.5 + Math.random() * ((texts.lenght - 1) - 0 + 1))];
+  document.getElementById("tex").innerHTML = texts[Math.floor(Math.random() * 3)];
   i2 += 2;
 
   };

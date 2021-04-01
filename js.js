@@ -39,7 +39,11 @@ function bigRealBitoc() {
     document.getElementById('bafMone').style.display = "block";
 
     let ftime = setInterval(ready, 100);
-    setTimeout(() => { clearInterval(ftime); alert('stop'); }, 5000);
+    //setTimeout(() => { clearInterval(ftime); alert('stop'); }, 5000);
+    setTimeout(function (){
+      clearInterval(ftime);
+      alert('stop')
+    },5000)
   } else {
     alert("у тебя " + money + " а надо " + porogBaf);
   }

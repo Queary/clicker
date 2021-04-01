@@ -18,9 +18,11 @@ window.onload = function() {
 };
 
 function onGamesBody() {
-  document.getElementById('hel').style.display = "none";
+  document.getElementById('hello').style.display = "none";
   document.getElementById('gamesBody').style.display = "block";
 };
+
+
 
 function exit() {
   document.getElementById('gamesBody', 'hello').style.display = "none";

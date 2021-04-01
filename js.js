@@ -40,6 +40,8 @@ function bigRealBitoc() {
 
     let ftime = setInterval(ready, 100);
     setTimeout(() => { clearInterval(ftime); alert('stop'); }, 5000);
+
+    document.getElementById('openBaf').stule.display = "none";
   } else {
     alert("у тебя " + money + " а надо " + porogBaf);
   }

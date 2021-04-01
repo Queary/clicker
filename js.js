@@ -39,9 +39,19 @@ function bigRealBitoc() {
     document.getElementById('bafMone').style.display = "block";
 
     let ftime = setInterval(ready, 100);
-    setTimeout(() => { clearInterval(ftime); alert('stop'); }, 5000);
+    setTimeout(() => {
+      clearInterval(ftime);
+      alert('endBaf');
+      document.getElementById('openBaf').style.display = "block";
+      document.getElementById('bafMin').style.display = "none";
+      document.getElementById('bafMone').style.display = "none";
+    }, 5000);
+    //описание 42 строки
+    /*setTimeout(function (){
+      clearInterval(ftime);
+      alert('stop')
+    },5000)*/
 
-    document.getElementById('openBaf').stule.display = "none";
   } else {
     alert("у тебя " + money + " а надо " + porogBaf);
   }

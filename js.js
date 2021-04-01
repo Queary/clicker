@@ -3,8 +3,9 @@ var upmoney=1;//сколько за один клик будет добавля�
 
 let i = 0;
 let i2 = 2;
-let texts = ["прожми меня", "уще прожми меня", "сильнее" ];
+let texts = ["прожми меня", "eще прожми меня", "сильнее" ];
 let porog = 5;
+let porogBaf = 15;
 
 function bitoc (){
   money += upmoney;
@@ -28,16 +29,20 @@ function bigBitoc() {
     porog += 5;
     document.getElementById("mon").innerHTML = "monPorog: " + porog;
   }else {
-    alert("лох, где бабки????");
+    alert("у тебя " + money + " а надо " + upmoney);
   };
 };
 var ileg = 0;
 function bigRealBitoc() {
-  document.getElementById('openBaf').style.display = "none";
-  document.getElementById('bafMin').style.display = "block";
-  document.getElementById('bafMone').style.display = "block";
+  if (money >= porogBaf){
+    document.getElementById('openBaf').style.display = "none";
+    document.getElementById('bafMin').style.display = "block";
+    document.getElementById('bafMone').style.display = "block";
 
-  let ftime = setInterval(ready,1);
+    let ftime = setInterval(ready,1000);
+  } else {
+    alert("у тебя " + money + " а надо " + porogBaf);
+  }
 };
 
 function ready () {

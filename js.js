@@ -5,7 +5,7 @@ let i = 0;
 let i2 = 2;
 let texts = ["прожми меня", "eще прожми меня", "сильнее" ];
 let porog = 5;
-let porogBaf = 15;
+let porogBaf = 10;
 
 function bitoc (){
   money += upmoney;
@@ -28,18 +28,18 @@ function bigBitoc() {
     document.getElementById("monet").innerHTML = "monet: " + money;
     porog += 5;
     document.getElementById("mon").innerHTML = "monPorog: " + porog;
-  }else {
-    alert("у тебя " + money + " а надо " + upmoney);
+  } else {
+    alert("у тебя " + money + " а надо " + porog);
   };
 };
-var ileg = 0;
 function bigRealBitoc() {
   if (money >= porogBaf){
     document.getElementById('openBaf').style.display = "none";
     document.getElementById('bafMin').style.display = "block";
     document.getElementById('bafMone').style.display = "block";
 
-    let ftime = setInterval(ready,1000);
+    let ftime = setInterval(ready, 100);
+    setTimeout(() => { clearInterval(ftime); alert('stop'); }, 5000);
   } else {
     alert("у тебя " + money + " а надо " + porogBaf);
   }
@@ -48,4 +48,5 @@ function bigRealBitoc() {
 function ready () {
   money += 1;
   document.getElementById("monet").innerHTML = "monet: " + money;
+  porogBaf *= 3;
 };

@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
     <title></title>
     <script src="js.js"></script>
     <script src="geo.js"></script>
-
-  </head>
+</head>
   <body>
 
-  <p id="list3">G3</p>
-  <p id="list2">G2</p>
-  <p id="list1">G1</p>
+  <div id="hel">
+    <p id="nameUsers">Начнем игру </p>
 
+    <button id="buttOne" onclick="onGamesBody()" type="button" name="button">Начнем?</button>
+    <button id="exit" onclick="exit()" type="button" name="button">Уйдешь?</button>
+  </div>
 
+  <div id="gamesBody" class="gamesBodi">
 
-<button id="up" class="pop" onclick="bitoc()" type="button" name="+1" >mone</button>
-<button class="pop" type="button" name="+1">mone</button>
-<br>прибавляет +1 к монете за каждый клик
-<input class="pop" onclick="bigBitoc()" type="button" value="добавить" ></input>
-<br>прибавляет +1 к монете за каждый клик
+    <p id="list3"></p>
+    <p id="list2"></p>
+    <p id="list1"></p>
 
-<button id="openBaf" class="pop" onclick="bigRealBitoc()" type="button">openBaf</button>
-<button id="bafMin" class="pop bafMin" type="button" name="button">временный баф</button>
-<button id="bafMone" class="pop bafMone" type="button" name="button">монета за пару секунд</button>
+    <button id="up" class="pop" onclick="bitoc()" type="button" name="+1">Кнопку жми</button>
+    <!-- <button class="pop" type="button" name="+1">mone</button> -->
+    <br>прибавляет х2 к монете за каждый клик
+    <input class="pop" onclick="bigBitoc()" type="button" value="добавить" ></input>
+    <br>прибавляет n монет за каждые 5сек
 
-<p id="zaKlick" >zaKlick: </p>
+    <button id="openBaf" class="pop" onclick="bigRealBitoc()" type="button">openBaf</button>
+    <button id="bafMin" class="pop bafMin" type="button" name="button">временный баф</button>
+    <button id="bafMone" class="pop bafMone" type="button" name="button">монета за пару секунд</button>
 
-<p id="monet">monet: </p>
+    <p id="zaKlick" >При использования х2: </p>
 
-<p id="mon"> </p>
+    <p id="monet">Монет в наличие: </p>
+
+    <p id="mon">Нужно монет для x2: </p>
+
+    <p id="oBf">Нужно монет для openBaf: </p>
+
+  </div>
 
   </body>
 </html>
